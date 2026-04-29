@@ -1,27 +1,49 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
 
+//Reads questions.txt and outputs question to user, returns true if user
+//is correct.
 bool askQuestion(int questionNum, FILE *fptr){
 
-  char questionsEasy[100];
+  char questions[100];
   char correctAnswer[100];
   char userChoice;
-  
-  fgets(questionsEasy, 100, fptr);
+  int counter;
+
+  int randNum = (rand() % 3) + 1;
+  if (randNum == 1){
+    counter = 1;
+  }
+  else if (randNum == 2){
+    counter = 7;
+  }
+  else if (randNum == 3){
+    counter = 13;
+  }
+   
+
+  //for (int i=0; i<counter; i++){
+  //fgets(questions, 100, fptr);
+  //}
+
+  fgets(questions, 100, fptr);
+  fgets(questions, 100, fptr);
   printf("%d. ", questionNum);
-  printf("%s", questionsEasy);
+  printf("%s", questions);
   
-  fgets(questionsEasy, 100, fptr);
-  printf("A: %s", questionsEasy);
+  fgets(questions, 100, fptr);
+  printf("%s", questions);
 
-  fgets(questionsEasy, 100, fptr);
-  printf("B: %s", questionsEasy);
+  fgets(questions, 100, fptr);
+  printf("%s", questions);
 
-  fgets(questionsEasy, 100, fptr);
-  printf("C: %s", questionsEasy);
+  fgets(questions, 100, fptr);
+  printf("%s", questions);
 
-  fgets(questionsEasy, 100, fptr);
-  printf("D: %s", questionsEasy);
+  fgets(questions, 100, fptr);
+  printf("%s", questions);
 
   fgets(correctAnswer, 100, fptr);
 
@@ -81,6 +103,8 @@ bool askQuestion(int questionNum, FILE *fptr){
 
 int main(){
 
+  srand(time(NULL));
+
   for(int i=0;i<70;i++){
     printf("-");
   }
@@ -93,23 +117,25 @@ int main(){
 
   FILE *fptr;
 
-  fptr = fopen("questionsEasy.txt", "r");
+  fptr = fopen("questions.txt", "r");
   
-  //possibly simplify with function
-  char questionsEasy[100];
+  //Array sizes might need to be changed for longer questions
+  char questions[100];
   char correctAnswer[100];
   char userChoice;
 
   (askQuestion(1, fptr));
 
   //check for Q2 for second questions...
-  while(*(fgets(questionsEasy,100,fptr)) != '2'){
+  while(*(fgets(questions,100,fptr)) != '2'){
     continue;
   }
 
-  fgets(questionsEasy, 100, fptr);
+  fgets(questions, 100, fptr);
   printf("2. ");
-  printf("%s", questionsEasy);
+  printf("%s", questions);
+  //Next step is to iterate through all 75 questions to make sure they work
+  //use function for that
 
   
 
