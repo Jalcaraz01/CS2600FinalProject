@@ -1,4 +1,4 @@
--
+-1
 A common way of threatening someone is to say, "If you mess with the bull, you get the" what?
 A: Tentacles
 B: Horns
@@ -22,14 +22,14 @@ A: Mr. Cloud
 B: Mr. Sun
 C: Mr. Black Hole
 D: Mr. Sky
+B
 Who is Batman's sidekick?
 A: Superman
 B: Robin
 C: Iron Man
 D: Mr. Incredible
 B
-2
--
+-2
 A vegetable is most likely to be pickled in which of these liquids?
 A: Coffee
 B: Milk
@@ -60,8 +60,7 @@ B: United Kingdom
 C: Peru
 D: New York
 C
-3
--
+-3
 What word is used to refer to a person who writes a book that is credited to another author?
 A: Spiritwriter
 B: Soulwriter
@@ -92,8 +91,7 @@ B: Supermen Superchat
 C: The Spider-Boys
 D: The Incredible Hunks
 C
-4
--
+-4
 Which of these creatures gets disoriented by artificial light?
 A: Moth
 B: Lizard
@@ -124,8 +122,7 @@ B: Coach
 C: Prada
 D: Noleg Rooma
 B
-5
--
+-5
 "Bluey" is an animated TV show made where?
 A: Australia
 B: India
@@ -156,8 +153,7 @@ B: Nine
 C: Ten
 D: Eleven
 B
-6
--
+-6
 Which of these instruments typically has the most strings?
 A: Concert harp
 B: Bass guitar
@@ -188,8 +184,7 @@ B: New York
 C: New Mexico
 D: New Jersey
 C
-7
--
+-7
 PALE GAS is a mneumonic for remembering the seven what?
 A: Colors of the rainbow
 B: World continents
@@ -220,8 +215,7 @@ B: License
 C: Labor
 D: Likeness
 D
-8
--
+-8
 Despite having a name that means "slacker", what animal's facial structure gives the illusion that it's always smiling?
 A: Armadillo
 B: Sloth
@@ -252,14 +246,13 @@ B: Kung fu
 C: Karate
 D: Jujitsu
 A
-9
--
-Which of these martial arts is Korean?
-A: Taekwondo
-B: Kung fu
-C: Karate
-D: Jujitsu
-A
+-9
+Which of the following languages has the longest alphabet?
+A: Greek
+B: Russian
+C: Arabic
+D: English
+B
 What sort of creature is a "tapir"?
 A: Bird
 B: Fish
@@ -284,8 +277,7 @@ B: Almond biscuits
 C: Deep-fried rice balls
 D: Dipping oils
 C
-10
--
+-10
 Which desert covers a huge region of Mongolia and northern China?
 A: Kalahari desert
 B: Mojave desert
@@ -316,8 +308,7 @@ B: Persian
 C: Sphynx
 D: Ragdoll
 A
-11
--
+-11
 Standing 15.5 inches high, which of these entertainment awards is the tallest?
 A: Emmy
 B: Grammy
@@ -348,8 +339,7 @@ B: Waffle
 C: Eggplant
 D: Bagel
 D
-12
--
+-12
 Able to act in less than 100 milliseconds, the fastest-moving muscle in the human body is located where?
 A: Heart
 B: Eye
@@ -380,8 +370,7 @@ B: The Matrix
 C: Toy Story
 D: Star Wars
 D
-13
--
+-13
 Primarily set in the year 2805, which of these movies takes place furthest in the future?
 A: WALL-E
 B: Alien
@@ -412,8 +401,7 @@ B: China
 C: United Arab Emirates
 D: Malaysia
 B
-14
--
+-14
 According to a common history myth, Marie Antoinette uttered the famous line "Let them eat cake" in response to being told what?
 A: Her army was refusing to fight
 B: Her subjects had no bread
@@ -444,8 +432,7 @@ B: Montgomery
 C: Jefferson City
 D: Pierre
 D
-15
--
+-15
 The word "planet" comes from an ancient Greek word that literally means what?
 A: Powerful
 B: Immortal

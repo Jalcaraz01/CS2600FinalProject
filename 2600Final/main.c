@@ -7,48 +7,41 @@
 //is correct.
 bool askQuestion(int questionNum, FILE *fptr){
 
-  char questions[100];
+  char questions[200];
   char correctAnswer[100];
   char userChoice;
   int counter;
 
-  int randNum = (rand() % 3) + 1;
-  if (randNum == 1){
-    counter = 1;
+  while(*fgets(questions,100,fptr) != '-'){
+    continue;
   }
-  else if (randNum == 2){
-    counter = 7;
-  }
-  else if (randNum == 3){
-    counter = 13;
-  }
-   
 
-  //for (int i=0; i<counter; i++){
-  //fgets(questions, 100, fptr);
-  //}
+  int randNum = (rand() % 5) * 6;
 
-  fgets(questions, 100, fptr);
-  fgets(questions, 100, fptr);
+  for (int i=0; i<randNum; i++){
+    fgets(questions,200, fptr);
+  }
+
+  fgets(questions, 200, fptr);
   printf("%d. ", questionNum);
   printf("%s", questions);
   
-  fgets(questions, 100, fptr);
+  fgets(questions, 200, fptr);
   printf("%s", questions);
 
-  fgets(questions, 100, fptr);
+  fgets(questions, 200, fptr);
   printf("%s", questions);
 
-  fgets(questions, 100, fptr);
+  fgets(questions, 200, fptr);
   printf("%s", questions);
 
-  fgets(questions, 100, fptr);
+  fgets(questions, 200, fptr);
   printf("%s", questions);
 
   fgets(correctAnswer, 100, fptr);
 
   printf("Your answer: ");
-  scanf("%c", &userChoice);
+  scanf(" %c", &userChoice);
   
   switch (userChoice){
   case 'A':
@@ -98,7 +91,9 @@ bool askQuestion(int questionNum, FILE *fptr){
   default:
     break;
 }
-  return true;
+  printf("Incorrect..\n");
+  return false;
+  
 }
 
 int main(){
@@ -111,6 +106,10 @@ int main(){
   printf("\n");
 
   printf("WELCOME TO..... WHO WANTS TO BE A MILLIONAIRE??\n");
+  for(int i=0;i<70;i++){
+    printf("-");
+  }
+  printf("\n");
   printf("In this game, YOU have the chance to become a millionaire.\n");
 
   printf("Let's Begin!\n");
@@ -120,30 +119,18 @@ int main(){
   fptr = fopen("questions.txt", "r");
   
   //Array sizes might need to be changed for longer questions
-  char questions[100];
+  char questions[200];
   char correctAnswer[100];
   char userChoice;
 
-  (askQuestion(1, fptr));
-
-  //check for Q2 for second questions...
-  while(*(fgets(questions,100,fptr)) != '2'){
-    continue;
+  for(int i=1; i<=15; i++){
+    if ((askQuestion(i, fptr)) == false){
+      printf("You lose!\n");
+      fclose(fptr);
+      return 0;
+    }
   }
-
-  fgets(questions, 100, fptr);
-  printf("2. ");
-  printf("%s", questions);
-  //Next step is to iterate through all 75 questions to make sure they work
-  //use function for that
-
-  
-
+  printf("YOU WON A MILLION DOLLARS!!!!!!\n");
   fclose(fptr);
-
-  
-
-
-  
   return 0;
 }
