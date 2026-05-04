@@ -73,6 +73,8 @@ char askQuestion(int questionNum, FILE *fptr, struct lifeLine *lifeptr){
     printf("Your answer: ");
     scanf(" %c", &userChoice);
 
+    while ((userChoice == 'H' && lifeptr->askHost == 0) || (userChoice == 'F' && lifeptr->fiftyFifty == 0)){
+
     //If user tries to use lifeline ask Host when none remain
     while (userChoice == 'H' && lifeptr->askHost == 0){
       printf("No host lifelines remaining!\n");
@@ -85,6 +87,7 @@ char askQuestion(int questionNum, FILE *fptr, struct lifeLine *lifeptr){
       printf("No 50/50 lifelines remaining!\n");
       printf("Your answer: ");
       scanf(" %c", &userChoice);
+    }
     }
 
     //Depending on the user's input, many different things can happen.
