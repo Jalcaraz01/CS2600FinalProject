@@ -192,7 +192,7 @@ int main(){
   //srand used to improve uniqueness of each game
   srand(time(NULL));
   //The moneyAmount array is used to update the current winnings after each correct answer
-  int moneyAmount[15] = {0, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000};
+  int moneyAmount[16] = {0, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000};
 
   //Initializing lifeline struct to have 2 of each
   struct lifeLine life = {2,2};

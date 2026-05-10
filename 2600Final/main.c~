@@ -73,6 +73,8 @@ char askQuestion(int questionNum, FILE *fptr, struct lifeLine *lifeptr){
     printf("Your answer: ");
     scanf(" %c", &userChoice);
 
+    while ((userChoice == 'H' && lifeptr->askHost == 0) || (userChoice == 'F' && lifeptr->fiftyFifty == 0)){
+
     //If user tries to use lifeline ask Host when none remain
     while (userChoice == 'H' && lifeptr->askHost == 0){
       printf("No host lifelines remaining!\n");
@@ -85,6 +87,7 @@ char askQuestion(int questionNum, FILE *fptr, struct lifeLine *lifeptr){
       printf("No 50/50 lifelines remaining!\n");
       printf("Your answer: ");
       scanf(" %c", &userChoice);
+    }
     }
 
     //Depending on the user's input, many different things can happen.
@@ -189,7 +192,7 @@ int main(){
   //srand used to improve uniqueness of each game
   srand(time(NULL));
   //The moneyAmount array is used to update the current winnings after each correct answer
-  int moneyAmount[15] = {0, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000};
+  int moneyAmount[15] = {0, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000};
 
   //Initializing lifeline struct to have 2 of each
   struct lifeLine life = {2,2};
@@ -232,7 +235,9 @@ int main(){
 
     //function is called to ask question corresponding to i
     result = askQuestion(i, fptr, lifeptr);
+    //If user answers incorrectly
     if (result == 'F'){
+      //check for checkpoints
       if(i >10){
 	printf("You won $32000!\n");
 	fclose(fptr);
@@ -254,7 +259,7 @@ int main(){
        return 0;
     }
   }
-  //if all 15 questions are answered correctly
+  //If all 15 questions are answered correctly
   printf("YOU WON A MILLION DOLLARS!!!!!!\n");
   fclose(fptr);
   return 0;
