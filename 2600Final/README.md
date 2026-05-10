@@ -11,7 +11,7 @@ This game runs in a terminal window, to  start it follow these steps:
 4) Type and enter "./game" to start the game!
 
 Once the game has started,
-Enter A, B, C, or D to answer questions
-Enter F to use one of two available 50/50 lifelines (reveals two options, one of which is the correct one)
-Enter H to use one of two available "Ask Host" lifelines (reveals the correct answer)
-Enter W to walk away with your current winnings
+Enter A, B, C, or D to answer questions.
+Enter F to use one of two available 50/50 lifelines (reveals two options, one of which is the correct one).
+Enter H to use one of two available "Ask Host" lifelines (reveals the correct answer).
+Enter W to walk away with your current winnings.
