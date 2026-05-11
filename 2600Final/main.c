@@ -11,7 +11,7 @@ struct lifeLine{
   
 //Receives question number, a file pointer, and struct pointer, and returns
 //either 'T' for True (Correct), 'F' for False (Incorrect), or 'W' if the user wants
-//to talk away with their current winnings.
+//to walk away with their current winnings.
 char askQuestion(int questionNum, FILE *fptr, struct lifeLine *lifeptr){
 
   //char arrays declared to read lines from file input
